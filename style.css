@@ -57,6 +57,7 @@ footer {
 	display: block;
 	margin: auto;
 	width: 100%;
+	padding-top: 30px;
 }
 
 .title {
@@ -161,6 +162,10 @@ img {
 .blog-title {
 	font-size: 1.6rem;
 	font-weight: bold;
+}
+
+.copyright {
+	font-size: 1em !important;
 }
 
 @media only screen and (max-width: 1000px) {

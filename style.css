@@ -8,6 +8,11 @@
     src: url("fonts/ABCDiatypeVariable-Trial.woff2") format('woff2');
 }
 
+@font-face {
+    font-family: "ABCGintoNord-Black-Trial";
+    src: url("fonts/ABCGintoNord-Black-Trial.woff") format('woff');
+}
+
 
 body {
 	font-family: 'ABCDiatypeVariable', sans-serif;
@@ -54,9 +59,10 @@ footer {
     width: 100%;
 }
 
-
 .title {
-	font-size: 4.5rem;
+	margin-top: 45px;
+	margin-left: 30px;
+	font-family: 'ABCGintoNord-Black-Trial', sans-serif;
 }
 
 .content h1 {
@@ -106,7 +112,7 @@ img {
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
-    grid-auto-rows: minmax(300px, auto);
+    /* grid-auto-rows: minmax(300px, auto); */
     grid-auto-flow: dense;
     width: 100%;
     margin:auto;
@@ -155,4 +161,31 @@ img {
 .blog-title {
 	font-size: 1.6rem;
 	font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .span-3 {
+    grid-column-end: span 10;
+  }
+  .span-2 {
+    grid-column-end: span 10;
+  }
+  .grid-item {
+    grid-column-end: span 10;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .left-sidebar {
+	display: none;
+  }
+  .right-sidebar {
+	float: initial;
+	width: 100%;
+  }
+  .content {
+	width: 95%;
+  }
+
 }
